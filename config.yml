@@ -2,3 +2,25 @@ baseURL: "https://hellendev.com.br/"
 languageCode: "en-us"
 title: "Hellen Assis"
 theme: "PaperMod"
+params:
+  homeInfoParams:
+    Title: Welcome!
+
+    Content: Welcome to my blog! I am Hellen, a passionate Software Engineer from Brazil.
+
+  socialIcons:
+    - name: "LinkedIn"
+      url: "<link>"
+    - name: "GitHub"
+      url: "<link2>"
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 10
