@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hellenrga.github.io/blog/docs/</loc>
+    <loc>https://hellendev.com.br/docs/</loc>
     <lastmod>2025-01-02T15:11:12-03:00</lastmod>
   </url><url>
-    <loc>https://hellenrga.github.io/blog/</loc>
+    <loc>https://hellendev.com.br/</loc>
     <lastmod>2025-01-02T15:11:12-03:00</lastmod>
   </url><url>
-    <loc>https://hellenrga.github.io/blog/docs/test/</loc>
+    <loc>https://hellendev.com.br/docs/test/</loc>
     <lastmod>2025-01-02T15:11:12-03:00</lastmod>
   </url><url>
-    <loc>https://hellenrga.github.io/blog/categories/</loc>
+    <loc>https://hellendev.com.br/categories/</loc>
   </url><url>
-    <loc>https://hellenrga.github.io/blog/tags/</loc>
+    <loc>https://hellendev.com.br/tags/</loc>
   </url>
 </urlset>
