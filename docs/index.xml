@@ -9,6 +9,14 @@
     <lastBuildDate>Thu, 02 Jan 2025 15:11:12 -0300</lastBuildDate>
     <atom:link href="https://hellendev.com.br/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>First Post</title>
+      <link>https://hellendev.com.br/docs/post/</link>
+      <pubDate>Thu, 02 Jan 2025 15:11:12 -0300</pubDate>
+      <guid>https://hellendev.com.br/docs/post/</guid>
+      <description>&lt;h2 id=&#34;hello-world&#34;&gt;Hello world!&lt;/h2&gt;
+&lt;p&gt;This is my first post :)&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Test</title>
       <link>https://hellendev.com.br/docs/test/</link>
       <pubDate>Thu, 02 Jan 2025 15:11:12 -0300</pubDate>
