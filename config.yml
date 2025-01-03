@@ -3,24 +3,26 @@ languageCode: "en-us"
 title: "Hellen Assis"
 theme: "PaperMod"
 params:
-  homeInfoParams:
-    Title: Welcome!
-
-    Content: Welcome to my blog! I am Hellen, a passionate Software Engineer from Brazil.
-
   socialIcons:
     - name: "LinkedIn"
-      url: "<link>"
+      url: "https://linkedin.com/in/hellenassisdev/"
     - name: "GitHub"
-      url: "<link2>"
+      url: "https://github.com/hellenrga"
+
+  homeInfoParams:
+    Title: "Hi, I'm Hellen! 😁"
+    content: >
+      Welcome to my blog. I’m 19-year-old **Software Engineer** from **Brazil**.
+      
+      - Here, you’ll find my thoughts on a variety of technical topics, including **Microsoft Azure, Kubernetes, Docker, Cloud-Native Technologies, DevOps, and Linux.**
 
 menu:
   main:
-    - identifier: about
-      name: About
-      url: /about/
+    - identifier: About
+      name: "About"
+      url: /aboutme/
       weight: 10
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 10
+    - identifier: "Index"
+      name: "Index"
+      url: /archives/
+      weight: 30

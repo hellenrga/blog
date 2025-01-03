@@ -1,9 +1,9 @@
 +++
 date = '2025-01-02T15:11:12-03:00'
 draft = false
-title = 'First Post'
+title = 'How was this website build?'
 +++
 
-## Hello world!
+## HUGO
 
-This is my first post :)
+What is hugo and how does it work?
