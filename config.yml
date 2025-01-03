@@ -10,11 +10,11 @@ params:
       url: "https://github.com/hellenrga"
 
   homeInfoParams:
-    Title: "Hi, I'm Hellen! 😁"
+    Title: "Welcome! 😁"
     content: >
-      Welcome to my blog. I’m 19-year-old **Software Engineer** from **Brazil**.
+      This is the website of **Hellen**, a **Software Engineer** from **Brazil**.
       
-      - Here, you’ll find my thoughts on a variety of technical topics, including **Microsoft Azure, Kubernetes, Docker, Cloud-Native Technologies, DevOps, and Linux.**
+      - Here, you’ll find my thoughts and learnings on a variety of technical topics, including **Microsoft Azure, Kubernetes, Docker, Cloud-Native Technologies, DevOps, and Linux.**
 
 menu:
   main:
