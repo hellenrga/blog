@@ -109,11 +109,16 @@
                     <span>Index</span>
                 </a>
             </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header">
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
   <h1>
     Docs
   </h1>
@@ -125,10 +130,10 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>DevOps Studies Hi, I have already had some previous contact with Docker on my first year of college and also I have heard about it at my actual job. So to deepen my knowledge I decided to follow an DevOps course journey from a brazilian tech school named ‘Alura’ (which I think is one of the biggest code schools in Brazil). The first trilha was 32-hours long with the total of 4 courses finished, which approached first Linux CLI, Secure Traffic, GitHub and finally, Docker.
+    <p>DevOps Course (Linux CLI, Docker..) Hi, I have already had some previous contact with Docker on my first year of college and also I have heard about it at my actual job. So to deepen my knowledge I decided to follow an DevOps course journey from a brazilian tech school named ‘Alura’ (which I think is one of the biggest code schools in Brazil). The first trilha was 32-hours long with the total of 4 courses finished, which approached first Linux CLI, Secure Traffic, GitHub and finally, Docker.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-03 17:10:38 -0300 -03'>January 3, 2025</span></footer>
+  <footer class="entry-footer"><span title='2025-01-03 17:10:38 -0300 -03'>January 3, 2025</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Deepening Docker Knowledge" href="http://localhost:1313/docs/starting-on-docker/"></a>
 </article>
 
@@ -141,7 +146,7 @@
     <p>This post provides a step-by-step guide on how you can create this blog powered by Hugo, configure Github Actions to publish to Github Pages, and link custom domain to your Github Pages.
 Set up Hugo Install Hugo and Create a New Site brew install hugo hugo new site theplaybook -f yml Install Hugo with Homebrew Run hugo new site &lt;site_name&gt;. This will create a directory &lt;site_name&gt; containing the hugo templates. Pass in the optional -f yml option to override the default toml files used for configuration. Refer to the hugo doc baseurl: Leave the baseurl in config.yml empty for now Create a new page hugo new docs/test.md Create a new page with hugo new &lt;filename&gt; Open the test.md file and set draft: false; otherwise the page will not render Add random content in the test.md file You can run hugo server to run the application locally on localhost:1313 but it might throw a layout error at the moment without any theme Install theme git init git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod Run git init on the root of the project to initialize a Git repository We will install the PaperMod theme. Use the two commands above from the instructions here Or choose a theme from the hugo themes theme: PaperMod Add theme: PaperMod to your config.yml Configure Github Actions to Publish to the Github Pages Create a Git repository and initialize Git echo &#34;# README&#34; &gt;&gt; README.md git add README.md git commit -m &#34;first commit&#34; git branch -M main git remote add origin &lt;path_to_your_git_repo&gt; git push -u origin main Create a repository on Github, create a readme file, add the remote address, and push your first commit Manually Add the gh-pages Branch ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-02 15:11:12 -0300 -03'>January 2, 2025</span></footer>
+  <footer class="entry-footer"><span title='2025-01-02 15:11:12 -0300 -03'>January 2, 2025</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to How was this website build?" href="http://localhost:1313/docs/website/"></a>
 </article>
     </main>

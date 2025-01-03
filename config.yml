@@ -16,6 +16,13 @@ params:
       
       - Here, you’ll find my thoughts and learnings on a variety of technical topics, including **Microsoft Azure, Kubernetes, Docker, Cloud-Native Technologies, DevOps, and Linux.**
 
+  # ShowShareButtons: true
+  ShowReadingTime: true
+  # ShowToc: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+
 menu:
   main:
     - identifier: About
@@ -25,4 +32,8 @@ menu:
     - identifier: "Index"
       name: "Index"
       url: /archives/
+      weight: 30
+    - identifier: "Tags"
+      name: "Tags"
+      url: /tags/
       weight: 30
