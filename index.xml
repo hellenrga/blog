@@ -6,15 +6,78 @@
     <description>Recent content in Home on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2025 15:11:12 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2025 17:10:38 -0300</lastBuildDate>
     <atom:link href="https://hellendev.com.br/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Deepening Docker Knowledge</title>
+      <link>https://hellendev.com.br/docs/starting-on-docker/</link>
+      <pubDate>Fri, 03 Jan 2025 17:10:38 -0300</pubDate>
+      <guid>https://hellendev.com.br/docs/starting-on-docker/</guid>
+      <description>&lt;h1 id=&#34;devops-course-linux-cli-docker&#34;&gt;DevOps Course (Linux CLI, Docker..)&lt;/h1&gt;
+&lt;p&gt;Hi, I have already had some previous contact with Docker on my first year of college and also I have heard about it at my actual job. So to deepen my knowledge I decided to follow an DevOps course journey from a brazilian tech school named &amp;lsquo;Alura&amp;rsquo; (which I think is one of the biggest code schools in Brazil). The first trilha was 32-hours long with the total of 4 courses finished, which approached first Linux CLI, Secure Traffic, GitHub and finally, Docker.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How was this website build?</title>
-      <link>https://hellendev.com.br/docs/post/</link>
+      <link>https://hellendev.com.br/docs/website/</link>
       <pubDate>Thu, 02 Jan 2025 15:11:12 -0300</pubDate>
-      <guid>https://hellendev.com.br/docs/post/</guid>
-      <description>&lt;h2 id=&#34;hugo&#34;&gt;HUGO&lt;/h2&gt;
-&lt;p&gt;What is hugo and how does it work?&lt;/p&gt;</description>
+      <guid>https://hellendev.com.br/docs/website/</guid>
+      <description>&lt;p&gt;This post provides a step-by-step guide on how you can create this blog powered by Hugo, configure Github Actions to publish to Github Pages, and link custom domain to your Github Pages.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;set-up-hugo&#34;&gt;Set up Hugo&lt;/h3&gt;
+&lt;h4 id=&#34;install-hugo-and-create-a-new-site&#34;&gt;Install Hugo and Create a New Site&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site theplaybook -f yml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Install Hugo with Homebrew&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;hugo new site &amp;lt;site_name&amp;gt;&lt;/code&gt;. This will create a directory &lt;code&gt;&amp;lt;site_name&amp;gt;&lt;/code&gt; containing the hugo templates. Pass in the optional &lt;code&gt;-f yml&lt;/code&gt; option to override the default toml files used for configuration. Refer to the &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;hugo doc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;baseurl&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Leave the baseurl in config.yml empty for now&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;create-a-new-page&#34;&gt;Create a new page&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new docs/test.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Create a new page with &lt;code&gt;hugo new &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open the test.md file and set &lt;code&gt;draft: false&lt;/code&gt;; otherwise the page will not render&lt;/li&gt;
+&lt;li&gt;Add random content in the test.md file&lt;/li&gt;
+&lt;li&gt;You can run &lt;code&gt;hugo server&lt;/code&gt; to run the application locally on &lt;code&gt;localhost:1313&lt;/code&gt; but it might throw a layout error at the moment without any theme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;install-theme&#34;&gt;Install theme&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule add --depth&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Run &lt;code&gt;git init&lt;/code&gt; on the root of the project to initialize a Git repository&lt;/li&gt;
+&lt;li&gt;We will install the PaperMod theme. Use the two commands above from the instructions &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/Installation&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Or choose a theme from the &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;hugo themes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;theme&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;PaperMod&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;theme: PaperMod&lt;/code&gt; to your config.yml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;configure-github-actions-to-publish-to-the-github-pages&#34;&gt;Configure Github Actions to Publish to the Github Pages&lt;/h3&gt;
+&lt;h4 id=&#34;create-a-git-repository-and-initialize-git&#34;&gt;Create a Git repository and initialize Git&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;# README&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; README.md
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add README.md
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch -M main
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote add origin &amp;lt;path_to_your_git_repo&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Create a repository on Github, create a readme file, add the remote address, and push your first commit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;manually-add-the-gh-pages-branch&#34;&gt;Manually Add the gh-pages Branch&lt;/h4&gt;
+&lt;p&gt;&lt;img alt=&#34;gh-pages branch&#34; loading=&#34;lazy&#34; src=&#34;https://hellendev.com.br/docs/gh-pages-branch.jpg&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome!</title>
+      <link>https://hellendev.com.br/aboutme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hellendev.com.br/aboutme/</guid>
+      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
+&lt;p&gt;I am a 19-year-old Software Engineering student with a deep passion for technology. Currently, I work in the Cloud Solutions sector for the agribusiness industry, where I focus on leveraging cutting-edge technologies to solve real-world challenges. My main area of expertise is DevOps and Microsoft Azure, a field that perfectly aligns with my fascination for innovative problem-solving and system efficiency.&lt;/p&gt;
+&lt;p&gt;My journey into tech began early. At the age of 12, I embarked on self-directed coding studies, which marked my first foray into programming. A year later, I enrolled in a technical course in Systems Analysis and Development, where I was able to deepen my knowledge and gain practical experience. By the time I completed the 3-year program, I was ready to take the next step: pursuing a Software Engineering degree. Since then, I have immersed myself in both academic and personal projects, constantly pushing the boundaries of my skills.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

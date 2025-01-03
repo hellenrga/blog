@@ -2,17 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hellendev.com.br/docs/starting-on-docker/</loc>
+    <lastmod>2025-01-03T17:10:38-03:00</lastmod>
+  </url><url>
     <loc>https://hellendev.com.br/docs/</loc>
-    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
+    <lastmod>2025-01-03T17:10:38-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/</loc>
-    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
-  </url><url>
-    <loc>https://hellendev.com.br/docs/post/</loc>
-    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
+    <lastmod>2025-01-03T17:10:38-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/categories/</loc>
+    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/tags/github-actions/</loc>
+    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/tags/github-pages/</loc>
+    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/docs/website/</loc>
+    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/tags/hugo/</loc>
+    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/tags/</loc>
+    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/categories/tutorial/</loc>
+    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/archives/</loc>
+  </url><url>
+    <loc>https://hellendev.com.br/aboutme/</loc>
   </url>
 </urlset>
