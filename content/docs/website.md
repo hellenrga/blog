@@ -2,7 +2,7 @@
 date = '2025-01-02T15:11:12-03:00'
 draft = false
 title = 'Building this blog with Hugo, Github Actions and a Custom Domain.'
-tags = ["hugo", "github actions", "github pages"]
+tags = ["Hugo", "Github"]
 +++
 
 This post provides a step-by-step guide on how you can create this blog powered by Hugo, configure Github Actions to publish to Github Pages, and link custom domain to your Github Pages.

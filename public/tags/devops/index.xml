@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Linux on Hellen Assis</title>
-    <link>http://localhost:1313/tags/linux/</link>
-    <description>Recent content in Linux on Hellen Assis</description>
+    <title>DevOps on Hellen Assis</title>
+    <link>http://localhost:1313/tags/devops/</link>
+    <description>Recent content in DevOps on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Jan 2025 17:10:38 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker, Linux Server, Shell Scripting.</title>
       <link>http://localhost:1313/docs/starting-on-docker/</link>

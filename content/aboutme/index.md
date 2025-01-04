@@ -15,3 +15,5 @@ Feel free to check out my [LinkedIn profile](#) to learn more about my journey a
 # About This Website
 
 This blog is a reflection of my journey in tech, written entirely from the command line. It serves as a platform to share my experiences, projects, and insights into cloud computing and software engineering. Through this space, I hope to connect with like-minded individuals and inspire others to explore the exciting world of technology.
+
+Check this blog repository at this [repository](github.com/hellenrga/blog)
