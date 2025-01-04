@@ -1,14 +1,11 @@
 +++
 date = '2025-01-02T15:11:12-03:00'
 draft = false
-title = 'How was this website build?'
+title = 'Building this blog with Hugo, Github Actions and a Custom Domain.'
 tags = ["hugo", "github actions", "github pages"]
-categories = ["tutorial"]
 +++
 
 This post provides a step-by-step guide on how you can create this blog powered by Hugo, configure Github Actions to publish to Github Pages, and link custom domain to your Github Pages.
-
-<!-- This guide is also available on Youtube [here](). -->
 
 ### Set up Hugo
 
@@ -74,13 +71,9 @@ git push -u origin main
 
 #### Manually Add the gh-pages Branch
 
-![gh-pages branch](/docs/gh-pages-branch.jpg)
-
 - Manually add the gh-pages branch to the repository; otherwise the github actions will throw an error
 
 #### Allow Read and Write Permissions on the Workflow
-
-![Github Actions permissions](/docs/actions_permission.jpg)
 
 - Allow read and write permissions under Settings > Actions > General > Workflow permissions
 
@@ -123,9 +116,9 @@ jobs:
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/
           cd ${GITHUB_WORKSPACE}/built-site
           git add .
-          git config user.name 'dhij'
-          git config user.email 'davidhwang.ij@gmail.com'
-          git commit -m 'Updated site'
+          git config user.name '[Your GitHub username]'
+          git config user.email '[Your e-mail]'
+          git commit -m '[Commit message]'
           git push
 ```
 
@@ -138,20 +131,16 @@ Note: the content will be deployed to `https://<username>.github.io/<repository_
 
 ### Link Custom Domain to Github Pages
 
-- Purchase your domain from the DNS provider such as [Namecheap](https://www.namecheap.com/) and [GoDaddy](https://www.godaddy.com/)
-
-![Github Pages Custom Domain](/docs/github_pages_custom_domain.jpg#left)
+- Purchase your domain from the DNS provider such of your preferency.
 
 - Add your custom domain under your Git repository's Settings > Pages > Custom Domain as shown in the image above.
 
 Note: the DNS check will initially be unsuccessful
 
-![Namecheap DNS Records](/docs/namecheap_dns_records.jpg#left)
-
-- Configure an apex domain by adding IP addresses for Github Pages as instructed [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain). As recommended there, set up a `www` subdomain as well by creating a CNAME record that points to `<username>.github.io`. If you are using Namecheap, you will have records that look something like the image above. The instructions are available [here](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/)
+- Configure an apex domain by adding IP addresses for Github Pages as instructed [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain). As recommended there, set up a `www` subdomain as well by creating a CNAME record that points to `<username>.github.io`.
 
 ```yaml
-baseurl: "http://theplaybook.dev/"
+baseurl: "http://hellendev.com.br/"
 ```
 
 - Update the baseurl in config.yml with your domain. Please note that the HTTPS is enforced through Github Pages

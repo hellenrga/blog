@@ -17,7 +17,7 @@
 &lt;p&gt;Hi, I have already had some previous contact with Docker on my first year of college and also I have heard about it at my actual job. So to deepen my knowledge I decided to follow an DevOps course journey from a brazilian tech school named &amp;lsquo;Alura&amp;rsquo; (which I think is one of the biggest code schools in Brazil). The first trilha was 32-hours long with the total of 4 courses finished, which approached first Linux CLI, Secure Traffic, GitHub and finally, Docker.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How was this website build?</title>
+      <title>Building this blog with Hugo, Github Actions and a Custom Domain.</title>
       <link>http://localhost:1313/docs/website/</link>
       <pubDate>Thu, 02 Jan 2025 15:11:12 -0300</pubDate>
       <guid>http://localhost:1313/docs/website/</guid>
