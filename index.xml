@@ -125,13 +125,6 @@
 &lt;p&gt;Note: the content will be deployed to &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io/&amp;lt;repository_name&amp;gt;/&lt;/code&gt; by default if not configured otherwise. Update the &lt;code&gt;base_url&lt;/code&gt; in config.yml to &lt;code&gt;&amp;quot;https://&amp;lt;username&amp;gt;.github.io/&amp;lt;repository_name&amp;gt;/&amp;quot;&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Tags</title>
-      <link>https://hellendev.com.br/tags/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hellendev.com.br/tags/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Welcome!</title>
       <link>https://hellendev.com.br/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Github Pages | Hellen Assis</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://hellendev.com.br/tags/github-pages/">
+<link rel="canonical" href="http://localhost:1313/tags/github-pages/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://hellendev.com.br/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://hellendev.com.br/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://hellendev.com.br/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://hellendev.com.br/apple-touch-icon.png">
-<link rel="mask-icon" href="https://hellendev.com.br/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://hellendev.com.br/tags/github-pages/index.xml">
-<link rel="alternate" hreflang="en" href="https://hellendev.com.br/tags/github-pages/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/github-pages/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/github-pages/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,15 +56,7 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://hellendev.com.br/tags/github-pages/">
-  <meta property="og:site_name" content="Hellen Assis">
-  <meta property="og:title" content="Github Pages">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Github Pages">
-<meta name="twitter:description" content="">
-
+</noscript>
 </head>
 
 <body class="list" id="top">
@@ -82,7 +74,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://hellendev.com.br/" accesskey="h" title="Hellen Assis (Alt + H)">Hellen Assis</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Hellen Assis (Alt + H)">Hellen Assis</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -108,17 +100,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://hellendev.com.br/aboutme/" title="About">
+                <a href="http://localhost:1313/aboutme/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://hellendev.com.br/archives/" title="Index">
+                <a href="http://localhost:1313/archives/" title="Index">
                     <span>Index</span>
                 </a>
             </li>
             <li>
-                <a href="https://hellendev.com.br/tags/" title="Tags">
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -126,7 +118,7 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://hellendev.com.br/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
     Github Pages
   </h1>
@@ -142,18 +134,17 @@
 Set up Hugo Install Hugo and Create a New Site brew install hugo hugo new site theplaybook -f yml Install Hugo with Homebrew Run hugo new site &lt;site_name&gt;. This will create a directory &lt;site_name&gt; containing the hugo templates. Pass in the optional -f yml option to override the default toml files used for configuration. Refer to the hugo doc baseurl: Leave the baseurl in config.yml empty for now Create a new page hugo new docs/test.md Create a new page with hugo new &lt;filename&gt; Open the test.md file and set draft: false; otherwise the page will not render Add random content in the test.md file You can run hugo server to run the application locally on localhost:1313 but it might throw a layout error at the moment without any theme Install theme git init git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod Run git init on the root of the project to initialize a Git repository We will install the PaperMod theme. Use the two commands above from the instructions here Or choose a theme from the hugo themes theme: PaperMod Add theme: PaperMod to your config.yml Configure Github Actions to Publish to the Github Pages Create a Git repository and initialize Git echo &#34;# README&#34; &gt;&gt; README.md git add README.md git commit -m &#34;first commit&#34; git branch -M main git remote add origin &lt;path_to_your_git_repo&gt; git push -u origin main Create a repository on Github, create a readme file, add the remote address, and push your first commit Manually Add the gh-pages Branch Manually add the gh-pages branch to the repository; otherwise the github actions will throw an error Allow Read and Write Permissions on the Workflow Allow read and write permissions under Settings &gt; Actions &gt; General &gt; Workflow permissions Add a .github/workflows/deploy.yml file under the project root directory name: Publish to GH Pages on: push: branches: - main pull_request: jobs: deploy: runs-on: ubuntu-latest steps: - name: Checkout source uses: actions/checkout@v3 with: submodules: true - name: Checkout destination uses: actions/checkout@v3 if: github.ref == &#39;refs/heads/main&#39; with: ref: gh-pages path: built-site - name: Setup Hugo run: | curl -L -o /tmp/hugo.tar.gz &#39;https://github.com/gohugoio/hugo/releases/download/v0.140.2/hugo_extended_0.140.2_linux-amd64.tar.gz&#39; tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo - name: Build run: ${RUNNER_TEMP}/hugo - name: Deploy if: github.ref == &#39;refs/heads/main&#39; run: | cp -R public/* ${GITHUB_WORKSPACE}/built-site/ cd ${GITHUB_WORKSPACE}/built-site git add . git config user.name &#39;[Your GitHub username]&#39; git config user.email &#39;[Your e-mail]&#39; git commit -m &#39;[Commit message]&#39; git push The first step checks out my repository under $GITHUB_WORKSPACE and submodules:true ensures that our submodule for the theme repository is fetched as well The second step allows us to reference the gh-pages branch via the $GITHUB_WORKSPACE/built-site directory, where our static sites will be stored in (Refer to the Deploy step) The third and fourth steps involve installing hugo and building the static pages in the public directory with the hugo command The last step copies the static sites into ${GITHUB_WORKSPACE}/built-site and pushes the changes to the referenced branch gh-pages, which is a special branch that Github recognizes and uses to publish to your Github Pages site Note: the content will be deployed to https://&lt;username&gt;.github.io/&lt;repository_name&gt;/ by default if not configured otherwise. Update the base_url in config.yml to &#34;https://&lt;username&gt;.github.io/&lt;repository_name&gt;/&#34;
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-02 15:11:12 -0300 -0300'>January 2, 2025</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to Building this blog with Hugo, Github Actions and a Custom Domain." href="https://hellendev.com.br/docs/website/"></a>
+  <footer class="entry-footer"><span title='2025-01-02 15:11:12 -0300 -03'>January 2, 2025</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Building this blog with Hugo, Github Actions and a Custom Domain." href="http://localhost:1313/docs/website/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://hellendev.com.br/">Hellen Assis</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Hellen Assis</a></span> · 
 
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

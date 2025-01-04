@@ -23,13 +23,13 @@
     <loc>https://hellendev.com.br/tags/linux/</loc>
     <lastmod>2025-01-03T17:10:38-03:00</lastmod>
   </url><url>
+    <loc>https://hellendev.com.br/tags/</loc>
+    <lastmod>2025-01-03T17:10:38-03:00</lastmod>
+  </url><url>
     <loc>https://hellendev.com.br/docs/website/</loc>
     <lastmod>2025-01-02T15:11:12-03:00</lastmod>
   </url><url>
-    <loc>https://hellendev.com.br/tags/github-actions/</loc>
-    <lastmod>2025-01-02T15:11:12-03:00</lastmod>
-  </url><url>
-    <loc>https://hellendev.com.br/tags/github-pages/</loc>
+    <loc>https://hellendev.com.br/tags/github/</loc>
     <lastmod>2025-01-02T15:11:12-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/tags/hugo/</loc>
@@ -38,8 +38,6 @@
     <loc>https://hellendev.com.br/archives/</loc>
   </url><url>
     <loc>https://hellendev.com.br/categories/</loc>
-  </url><url>
-    <loc>https://hellendev.com.br/tags/</loc>
   </url><url>
     <loc>https://hellendev.com.br/aboutme/</loc>
   </url>
