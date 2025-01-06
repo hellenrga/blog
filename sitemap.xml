@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hellendev.com.br/docs/azure-finops-hub/</loc>
+    <lastmod>2025-01-06T19:48:42-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/docs/</loc>
+    <lastmod>2025-01-06T19:48:42-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/</loc>
+    <lastmod>2025-01-06T19:48:42-03:00</lastmod>
+  </url><url>
     <loc>https://hellendev.com.br/tags/aws/</loc>
     <lastmod>2025-01-03T17:10:38-03:00</lastmod>
   </url><url>
@@ -12,12 +21,6 @@
     <lastmod>2025-01-03T17:10:38-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/docs/starting-on-docker/</loc>
-    <lastmod>2025-01-03T17:10:38-03:00</lastmod>
-  </url><url>
-    <loc>https://hellendev.com.br/docs/</loc>
-    <lastmod>2025-01-03T17:10:38-03:00</lastmod>
-  </url><url>
-    <loc>https://hellendev.com.br/</loc>
     <lastmod>2025-01-03T17:10:38-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/tags/linux/</loc>
