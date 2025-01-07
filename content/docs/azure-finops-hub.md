@@ -2,6 +2,7 @@
 date = '2025-01-06T19:48:42-03:00'
 draft = false
 title = 'Azure FinOps Hub'
+tags = ['Azure', 'FinOps', 'DevOps']
 +++
 
 # What is Azure FinOps Hub?

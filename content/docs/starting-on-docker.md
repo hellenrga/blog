@@ -9,7 +9,7 @@ tags = ["Linux", "Docker", "AWS", "DevOps"]
 
 I already have a solid foundation in DevOps tools through my professional experience and studies, I believe there’s always room to deepen my understanding. To strengthen my knowledge further, I decided to revisit the basics and embark on a Starter DevOps course offered by Alura, one of Brazil’s premier tech education platforms.
 
-This course spanned 32 hours and was divided into four modules: **Linux CLI, Secure Traffic, and Docker.** Each module built upon the fundamentals and provided hands-on experience, ensuring a well-rounded grasp of essential DevOps concepts.
+This course spanned 32 hours and was divided into three modules: **Linux CLI, Secure Traffic, and Docker.** Each module built upon the fundamentals and provided hands-on experience, ensuring a well-rounded grasp of essential DevOps concepts.
 
 Here’s the certification for completing this journey:  
 ![Certificate](/images/start-devops-certificate.png)

@@ -6,8 +6,28 @@
     <description>Recent content in Home on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jan 2025 17:10:38 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jan 2025 20:02:23 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git-repair for broken Git Repositories</title>
+      <link>http://localhost:1313/docs/broken-git-repository/</link>
+      <pubDate>Mon, 06 Jan 2025 20:02:23 -0300</pubDate>
+      <guid>http://localhost:1313/docs/broken-git-repository/</guid>
+      <description>&lt;h1 id=&#34;my-repository-suddenly-broke-heres-how-i-fixed-it&#34;&gt;My Repository Suddenly Broke! Here&amp;rsquo;s How I Fixed It&lt;/h1&gt;
+&lt;p&gt;Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to &lt;code&gt;git push&lt;/code&gt; my hard-working changes, my repository… broke. Completely.&lt;/p&gt;
+&lt;p&gt;At first, I thought, &lt;em&gt;&amp;ldquo;Oh no, what did I mess up this time?&amp;rdquo;&lt;/em&gt; Cue the classic facepalm of frustration.&lt;/p&gt;
+&lt;p&gt;After all the crying and groaning (just kidding&amp;hellip;. it was only crying 😆) I turned to AI for a solution.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure FinOps Hub</title>
+      <link>http://localhost:1313/docs/azure-finops-hub/</link>
+      <pubDate>Mon, 06 Jan 2025 19:48:42 -0300</pubDate>
+      <guid>http://localhost:1313/docs/azure-finops-hub/</guid>
+      <description>&lt;h1 id=&#34;what-is-azure-finops-hub&#34;&gt;What is Azure FinOps Hub?&lt;/h1&gt;
+&lt;p&gt;The Azure FinOps Hub is a community-driven template designed to consolidate Azure financial management tools as Cost Management + Billing, Azure Advisor, Azure Policy etc. into a &lt;strong&gt;single interface&lt;/strong&gt;. Simple as that.&lt;/p&gt;
+&lt;p&gt;(Why is it so hard to find straightforward concepts on internet these days?)&lt;/p&gt;
+&lt;p&gt;Even though the template is community-made, it&amp;rsquo;s recognined by Microsoft Azure itself, and has a Azure Learn page dedicated for it. Read it &lt;a href=&#34;https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Docker, Linux Server, Shell Scripting.</title>
       <link>http://localhost:1313/docs/starting-on-docker/</link>
@@ -15,7 +35,7 @@
       <guid>http://localhost:1313/docs/starting-on-docker/</guid>
       <description>&lt;h1 id=&#34;diving-into-devops&#34;&gt;Diving into DevOps&lt;/h1&gt;
 &lt;p&gt;I already have a solid foundation in DevOps tools through my professional experience and studies, I believe there’s always room to deepen my understanding. To strengthen my knowledge further, I decided to revisit the basics and embark on a Starter DevOps course offered by Alura, one of Brazil’s premier tech education platforms.&lt;/p&gt;
-&lt;p&gt;This course spanned 32 hours and was divided into four modules: &lt;strong&gt;Linux CLI, Secure Traffic, and Docker.&lt;/strong&gt; Each module built upon the fundamentals and provided hands-on experience, ensuring a well-rounded grasp of essential DevOps concepts.&lt;/p&gt;</description>
+&lt;p&gt;This course spanned 32 hours and was divided into three modules: &lt;strong&gt;Linux CLI, Secure Traffic, and Docker.&lt;/strong&gt; Each module built upon the fundamentals and provided hands-on experience, ensuring a well-rounded grasp of essential DevOps concepts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building this blog with Hugo, Github Actions and a Custom Domain.</title>
