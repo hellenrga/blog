@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Git-repair for broken Git Repositories | Hellen Assis</title>
-<meta name="keywords" content="Github, DevOps, Stackoverflow, Problem-solving">
+<meta name="keywords" content="Github, DevOps, Problem-solving">
 <meta name="description" content="My Repository Suddenly Broke! Here&rsquo;s How I Fixed It
 Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to git push my hard-working changes, my repository… broke. Completely.
 At first, I thought, &ldquo;Oh no, what did I mess up this time?&rdquo; Cue the classic facepalm of frustration.
@@ -71,7 +71,6 @@ After all the crying and groaning (just kidding…. it was only crying 😆) I t
     <meta property="article:modified_time" content="2025-01-06T20:02:23-03:00">
     <meta property="article:tag" content="Github">
     <meta property="article:tag" content="DevOps">
-    <meta property="article:tag" content="Stackoverflow">
     <meta property="article:tag" content="Problem-Solving">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git-repair for broken Git Repositories">
@@ -109,7 +108,7 @@ After all the crying and groaning (just kidding&hellip;. it was only crying 😆
   "name": "Git-repair for broken Git Repositories",
   "description": "My Repository Suddenly Broke! Here\u0026rsquo;s How I Fixed It Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to git push my hard-working changes, my repository… broke. Completely.\nAt first, I thought, \u0026ldquo;Oh no, what did I mess up this time?\u0026rdquo; Cue the classic facepalm of frustration.\nAfter all the crying and groaning (just kidding\u0026hellip;. it was only crying 😆) I turned to AI for a solution.\n",
   "keywords": [
-    "Github", "DevOps", "Stackoverflow", "Problem-solving"
+    "Github", "DevOps", "Problem-solving"
   ],
   "articleBody": "My Repository Suddenly Broke! Here’s How I Fixed It Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to git push my hard-working changes, my repository… broke. Completely.\nAt first, I thought, “Oh no, what did I mess up this time?” Cue the classic facepalm of frustration.\nAfter all the crying and groaning (just kidding…. it was only crying 😆) I turned to AI for a solution.\nHowever, the suggestions I got from ChatGPT were… not very intuitive. I read through them, skeptical but hopeful, and decided to give them a shot anyway.\nThe first suggestion was to run the command:\ngit fsck --full This stands for “Git file system check,” and I’ll admit, it was my first time using it. Unfortunately, the command brought nothing.\nAnd then, next step was:\ngit fetch --all This command forces your local repository to synchronize with the remote one. The catch? I’d need to back up all my changes, replace my current files with the older commit, and then manually restore my updated files. The thought alone was exhausting, and I couldn’t shake the feeling that there had to be a better way.\nDetermined, I kept searching. And that’s when I discovered a lifesaver: git repair, a complement to git fsck. You can read about it here.\nThis tool worked like magic. In just three simple commands, my frustrating problem was rgone:\nsudo apt install git-repair git-repair And just like that, my repository was back in action.\nLessons Learned (While researching the issue, I also learned something surprising: some Ubuntu distros had been randomly breaking user repositories. Why? Only the tech gods know.)\nWhat I want to share is what I extracted from this simple situation:\nNot every AI-generated solution is reliable. If you feel that something is not quite right or true, trust your gut and keep digging. Not every scary problem is as complicated as it seems. Often, there’s a simpler fix than you might expect. DevOps mindset. Optimizing your time is always the path. Take a deep breath, stay curious, and keep troubleshooting—you might be just a few commands away from a solution!\n",
   "wordCount" : "366",
@@ -240,7 +239,6 @@ After all the crying and groaning (just kidding&hellip;. it was only crying 😆
     <ul class="post-tags">
       <li><a href="https://hellendev.com.br/tags/github/">Github</a></li>
       <li><a href="https://hellendev.com.br/tags/devops/">DevOps</a></li>
-      <li><a href="https://hellendev.com.br/tags/stackoverflow/">Stackoverflow</a></li>
       <li><a href="https://hellendev.com.br/tags/problem-solving/">Problem-Solving</a></li>
     </ul>
 <nav class="paginav">
