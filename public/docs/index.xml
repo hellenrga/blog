@@ -9,14 +9,14 @@
     <lastBuildDate>Mon, 06 Jan 2025 20:02:23 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Git-repair for broken git repositories</title>
+      <title>Git-repair for broken Git Repositories</title>
       <link>http://localhost:1313/docs/broken-git-repository/</link>
       <pubDate>Mon, 06 Jan 2025 20:02:23 -0300</pubDate>
       <guid>http://localhost:1313/docs/broken-git-repository/</guid>
       <description>&lt;h1 id=&#34;my-repository-suddenly-broke-heres-how-i-fixed-it&#34;&gt;My Repository Suddenly Broke! Here&amp;rsquo;s How I Fixed It&lt;/h1&gt;
 &lt;p&gt;Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to &lt;code&gt;git push&lt;/code&gt; my hard-working changes, my repository… broke. Completely.&lt;/p&gt;
 &lt;p&gt;At first, I thought, &lt;em&gt;&amp;ldquo;Oh no, what did I mess up this time?&amp;rdquo;&lt;/em&gt; Cue the classic facepalm of frustration.&lt;/p&gt;
-&lt;p&gt;After some &lt;em&gt;minor&lt;/em&gt; crying, I turned to AI for a solution. However, the suggestions I got from ChatGPT were&amp;hellip; unconventiona. I read through them, skeptical but hopeful, and decided to give them a shot anyway.&lt;/p&gt;</description>
+&lt;p&gt;After all the crying and groaning (just kidding&amp;hellip;. it was only crying 😆) I turned to AI for a solution.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Azure FinOps Hub</title>

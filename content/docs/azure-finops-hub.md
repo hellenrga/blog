@@ -11,7 +11,7 @@ The Azure FinOps Hub is a community-driven template designed to consolidate Azur
 
 (Why is it so hard to find straightforward concepts on internet these days?)
 
-Even though the template is community-made, it's recognined by Microsoft Azure itself, and has a Azure Learn page dedicated for it. Read it [here](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview).
+Even though the template is community-made, it's recognized by Microsoft Azure itself, and has a Azure Learn page dedicated for it. Read it [here](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview).
 
 ## But why using it if... I already have all the other tools?
 
