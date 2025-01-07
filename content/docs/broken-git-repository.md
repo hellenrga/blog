@@ -56,4 +56,3 @@ What I want to share is what I extracted from this simple situation:
 3. **DevOps mindset.** Optimizing your time is always the path.  
 
 Take a deep breath, stay curious, and keep troubleshooting—you might be just a few commands away from a solution!  
-
