@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Azure on Hellen Assis</title>
+    <link>https://hellendev.com.br/tags/azure/</link>
+    <description>Recent content in Azure on Hellen Assis</description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jan 2025 19:48:42 -0300</lastBuildDate>
+    <atom:link href="https://hellendev.com.br/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure FinOps Hub</title>
+      <link>https://hellendev.com.br/docs/azure-finops-hub/</link>
+      <pubDate>Mon, 06 Jan 2025 19:48:42 -0300</pubDate>
+      <guid>https://hellendev.com.br/docs/azure-finops-hub/</guid>
+      <description>&lt;h1 id=&#34;what-is-azure-finops-hub&#34;&gt;What is Azure FinOps Hub?&lt;/h1&gt;
+&lt;p&gt;The Azure FinOps Hub is a community-driven template designed to consolidate Azure financial management tools as Cost Management + Billing, Azure Advisor, Azure Policy etc. into a &lt;strong&gt;single interface&lt;/strong&gt;. Simple as that.&lt;/p&gt;
+&lt;p&gt;(Why is it so hard to find straightforward concepts on internet these days?)&lt;/p&gt;
+&lt;p&gt;Even though the template is community-made, it&amp;rsquo;s recognined by Microsoft Azure itself, and has a Azure Learn page dedicated for it. Read it &lt;a href=&#34;https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
