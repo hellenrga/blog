@@ -2,7 +2,7 @@
 date = '2025-01-06T20:02:23-03:00'
 draft = false
 title = 'Git-repair for broken Git Repositories'
-tags = ['Github', 'DevOps', 'Stackoverflow', 'Problem-solving']
+tags = ['Github', 'DevOps', 'Problem-solving']
 +++
 
 # My Repository Suddenly Broke! Here's How I Fixed It  
