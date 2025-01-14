@@ -6,8 +6,20 @@
     <description>Recent content in Docs on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jan 2025 20:02:23 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 18:18:13 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transmission Protocols (TCP, UDP, FTP, SFTP, TFTP)</title>
+      <link>http://localhost:1313/docs/transmission-protocols/</link>
+      <pubDate>Tue, 14 Jan 2025 18:18:13 -0300</pubDate>
+      <guid>http://localhost:1313/docs/transmission-protocols/</guid>
+      <description>&lt;h1 id=&#34;file-and-transmission-protocols&#34;&gt;File and Transmission Protocols&lt;/h1&gt;
+&lt;h2 id=&#34;tcp-and-udp&#34;&gt;TCP and UDP&lt;/h2&gt;
+&lt;h3 id=&#34;tcp-transmission-control-protocol&#34;&gt;TCP (Transmission Control Protocol)&lt;/h3&gt;
+&lt;p&gt;TCP a core protocol of TCP/IP suite, used for reliable communication between devices. It&amp;rsquo;s a connection oriented protocol. So, before data transmission begins, a connection is established through a three-way handshake, the image below shows it.&lt;/p&gt;
+&lt;p&gt;TCP ensures data integrity by retransmitting lost packets, ordering packets, and confirming successful delivery.&lt;/p&gt;
+&lt;p&gt;Ideal for applications where accuracy and reliability are critical, such as web browsing (HTTP/HTTPS), email (SMTP/IMAP/POP3) and file transfer (FTP/SFTP)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Git-repair for broken Git Repositories</title>
       <link>http://localhost:1313/docs/broken-git-repository/</link>
@@ -26,7 +38,7 @@
       <description>&lt;h1 id=&#34;what-is-azure-finops-hub&#34;&gt;What is Azure FinOps Hub?&lt;/h1&gt;
 &lt;p&gt;The Azure FinOps Hub is a community-driven template designed to consolidate Azure financial management tools as Cost Management + Billing, Azure Advisor, Azure Policy etc. into a &lt;strong&gt;single interface&lt;/strong&gt;. Simple as that.&lt;/p&gt;
 &lt;p&gt;(Why is it so hard to find straightforward concepts on internet these days?)&lt;/p&gt;
-&lt;p&gt;Even though the template is community-made, it&amp;rsquo;s recognined by Microsoft Azure itself, and has a Azure Learn page dedicated for it. Read it &lt;a href=&#34;https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;Even though the template is community-made, it&amp;rsquo;s recognized by Microsoft Azure itself, and has a Azure Learn page dedicated for it. Read it &lt;a href=&#34;https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker, Linux Server, Shell Scripting.</title>

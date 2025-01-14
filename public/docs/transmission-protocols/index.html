@@ -5,14 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Git-repair for broken Git Repositories | Hellen Assis</title>
-<meta name="keywords" content="Github, DevOps, Problem-solving">
-<meta name="description" content="My Repository Suddenly Broke! Here&rsquo;s How I Fixed It
-Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to git push my hard-working changes, my repository… broke. Completely.
-At first, I thought, &ldquo;Oh no, what did I mess up this time?&rdquo; Cue the classic facepalm of frustration.
-After all the crying and groaning (just kidding&hellip;. it was only crying 😆) I turned to AI for a solution.">
+<title>Protocols (TCP, UDP, FTP, SFTP, TFTP) | Hellen Assis</title>
+<meta name="keywords" content="DevOps, Roadmap, Network">
+<meta name="description" content="File and Transmission Protocols
+TCP (Transmission Control Protocol)
+TCP a core protocol of TCP/IP suite, used for reliable communication between devices. It&rsquo;s a connection oriented protocol. So, before data transmission begins, a connection is established through a three-way handshake, the image below shows it.
+
+TCP ensures data integrity by retransmitting lost packets, ordering packets, and confirming successful delivery.
+Ideal for applications where accuracy and reliability are critical, such as web browsing (HTTP/HTTPS), email (SMTP/IMAP/POP3) and file transfer (FTP/SFTP). Those which I will cover in another post :)">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/docs/broken-git-repository/">
+<link rel="canonical" href="http://localhost:1313/docs/transmission-protocols/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -21,7 +23,7 @@ After all the crying and groaning (just kidding&hellip;. it was only crying 😆
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/docs/broken-git-repository/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/docs/transmission-protocols/">
 <noscript>
     <style>
         #theme-toggle,
@@ -125,62 +127,90 @@ After all the crying and groaning (just kidding&hellip;. it was only crying 😆
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/docs/">Docs</a></div>
     <h1 class="post-title entry-hint-parent">
-      Git-repair for broken Git Repositories
+      Protocols (TCP, UDP, FTP, SFTP, TFTP)
     </h1>
-    <div class="post-meta"><span title='2025-01-06 20:02:23 -0300 -03'>January 6, 2025</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2025-01-14 18:18:13 -0300 -03'>January 14, 2025</span>&nbsp;·&nbsp;2 min
 
 </div>
   </header> 
-  <div class="post-content"><h1 id="my-repository-suddenly-broke-heres-how-i-fixed-it">My Repository Suddenly Broke! Here&rsquo;s How I Fixed It<a hidden class="anchor" aria-hidden="true" href="#my-repository-suddenly-broke-heres-how-i-fixed-it">#</a></h1>
-<p>Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to <code>git push</code> my hard-working changes, my repository… broke. Completely.</p>
-<p>At first, I thought, <em>&ldquo;Oh no, what did I mess up this time?&rdquo;</em> Cue the classic facepalm of frustration.</p>
-<p>After all the crying and groaning (just kidding&hellip;. it was only crying 😆) I turned to AI for a solution.</p>
-<p>However, the suggestions I got from ChatGPT were&hellip; not very intuitive. I read through them, skeptical but hopeful, and decided to give them a shot anyway.</p>
-<hr>
-<p>The first suggestion was to run the command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git fsck --full  
-</span></span></code></pre></div><p>This stands for &ldquo;Git file system check,&rdquo; and I&rsquo;ll admit, it was my first time using it. Unfortunately, the command brought nothing.</p>
-<hr>
-<p>And then, next step was:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git fetch --all  
-</span></span></code></pre></div><p>This command forces your local repository to synchronize with the remote one. The catch? <strong>I’d need to back up all my changes, replace my current files with the older commit, and then manually restore my updated files</strong>. The thought alone was exhausting, and I couldn’t shake the feeling that there <em>had</em> to be a better way.</p>
-<hr>
-<p>Determined, I kept searching. And that’s when I discovered a lifesaver: <strong><code>git repair</code></strong>, a complement to <code>git fsck</code>.  You can read about it <a href="https://git-repair.branchable.com">here</a>.</p>
-<p>This tool worked like magic. In just three simple commands, my frustrating problem was rgone:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install git-repair  
-</span></span><span style="display:flex;"><span>git-repair  
-</span></span></code></pre></div><p>And just like that, my repository was back in action.</p>
-<p><img alt="git-repair usage" loading="lazy" src="/images/git_repair.png"></p>
-<hr>
-<h2 id="lessons-learned">Lessons Learned<a hidden class="anchor" aria-hidden="true" href="#lessons-learned">#</a></h2>
-<p>(While researching the issue, I also learned something surprising: some Ubuntu distros had been randomly breaking user repositories. Why? Only the tech gods know.)</p>
-<p>What I want to share is what I extracted from this simple situation:</p>
-<ol>
-<li><strong>Not every AI-generated solution is reliable.</strong> If you feel that something is not quite right or true, <strong>trust your gut and keep digging.</strong></li>
-<li><strong>Not every scary problem is as complicated as it seems.</strong> Often, there’s a simpler fix than you might expect.</li>
-<li><strong>DevOps mindset.</strong> Optimizing your time is always the path.</li>
-</ol>
-<p>Take a deep breath, stay curious, and keep troubleshooting—you might be just a few commands away from a solution!</p>
+  <div class="post-content"><h2 id="file-and-transmission-protocols">File and Transmission Protocols<a hidden class="anchor" aria-hidden="true" href="#file-and-transmission-protocols">#</a></h2>
+<h3 id="tcp-transmission-control-protocol">TCP (Transmission Control Protocol)<a hidden class="anchor" aria-hidden="true" href="#tcp-transmission-control-protocol">#</a></h3>
+<p>TCP a core protocol of TCP/IP suite, used for reliable communication between devices. It&rsquo;s a connection oriented protocol. So, before data transmission begins, a connection is established through a three-way handshake, the image below shows it.</p>
+<p><img alt="three-wat handshake" loading="lazy" src="/images/three-way-handshake.png"></p>
+<p>TCP ensures data integrity by retransmitting lost packets, ordering packets, and confirming successful delivery.</p>
+<p>Ideal for applications where accuracy and reliability are critical, such as web browsing (HTTP/HTTPS), email (SMTP/IMAP/POP3) and file transfer (FTP/SFTP). Those which I will cover in another post :)</p>
+<h3 id="udp-user-datagram-protocol">UDP (User Datagram Protocol)<a hidden class="anchor" aria-hidden="true" href="#udp-user-datagram-protocol">#</a></h3>
+<p>An alternative to TCP, used for faster communication. It is a connectionless protocol, so it has no formal connection setup between devices. Data is sent without guarantee of delivery. It is faster than TCP, is suitable for time-sensitive applications like video streaming, online gaming, and DNS lookups. The thing is, there ir no error-checking or retransmission, which can result in packet loss and poor security.</p>
+<h2 id="ftp-sftp-tftp">FTP, SFTP, TFTP<a hidden class="anchor" aria-hidden="true" href="#ftp-sftp-tftp">#</a></h2>
+<h3 id="ftp-file-transfer-protocol">FTP (File Transfer Protocol)<a hidden class="anchor" aria-hidden="true" href="#ftp-file-transfer-protocol">#</a></h3>
+<p>The standard protocol that is used to transfer files between computers and servers over a network. It is the language that computers use to transfer files over a TCP/IP network</p>
+<p>Support file upload and download, allows directory navigation and file management on the server. But very vulnerable to interception, for exemple, data is transmitted in plaintext, including username and passwords.</p>
+<p>It’s suitable for non-sensitive file transfers where security is not a concern.</p>
+<h3 id="sftp-secure-file-transfer-protocol">SFTP (Secure File Transfer Protocol)<a hidden class="anchor" aria-hidden="true" href="#sftp-secure-file-transfer-protocol">#</a></h3>
+<p>A secure version of FTP, it adds a layer of security by using SSH (Secure Shell) encrypting the data.</p>
+<p>SFTP ensures confidentiality by encrypting files and credentials. Uses a single conection, simplifying firewall configurations.</p>
+<p>It’s suitable for secure file transfers in corporate environments and over the internet.</p>
+<h3 id="tftp-trivial-file-transfer-protocol">TFTP (Trivial File Transfer Protocol)<a hidden class="anchor" aria-hidden="true" href="#tftp-trivial-file-transfer-protocol">#</a></h3>
+<p>A simplified file transfer protocol designed for minimal functionality.</p>
+<p>It is a connectionless (uses UDP instead of TCP) and very poorly secure protocol. There is no authentication or advanced features like directory navigation. Not recommended for sensitive data transfer.</p>
+<p>It’s suitable for LAN (Local Area Network) environments where security and reliability are less critical. Commonly used for transferring configuration files, firmware updates or boot files in embedded systems and network devices.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Feature</strong></th>
+          <th><strong>FTP</strong></th>
+          <th><strong>SFTP</strong></th>
+          <th><strong>TFTP</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Protocol</strong></td>
+          <td>TCP</td>
+          <td>TCP</td>
+          <td>UDP</td>
+      </tr>
+      <tr>
+          <td><strong>Security</strong></td>
+          <td>No encryption</td>
+          <td>Encrypted (SSH-based)</td>
+          <td>No encryption</td>
+      </tr>
+      <tr>
+          <td><strong>Use Case</strong></td>
+          <td>General file transfers</td>
+          <td>Secure file transfers</td>
+          <td>Local and simple transfers</td>
+      </tr>
+      <tr>
+          <td><strong>Authentication</strong></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td><strong>Reliability</strong></td>
+          <td>High</td>
+          <td>High</td>
+          <td>Low</td>
+      </tr>
+  </tbody>
+</table>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/github/">Github</a></li>
       <li><a href="http://localhost:1313/tags/devops/">DevOps</a></li>
-      <li><a href="http://localhost:1313/tags/problem-solving/">Problem-Solving</a></li>
+      <li><a href="http://localhost:1313/tags/roadmap/">Roadmap</a></li>
+      <li><a href="http://localhost:1313/tags/network/">Network</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/docs/transmission-protocols/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>Transmission Protocols (TCP, UDP, FTP, SFTP, TFTP)</span>
-  </a>
-  <a class="next" href="http://localhost:1313/docs/azure-finops-hub/">
+  <a class="next" href="http://localhost:1313/docs/broken-git-repository/">
     <span class="title">Next »</span>
     <br>
-    <span>Azure FinOps Hub</span>
+    <span>Git-repair for broken Git Repositories</span>
   </a>
 </nav>
 
