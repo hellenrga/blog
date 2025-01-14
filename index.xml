@@ -6,8 +6,20 @@
     <description>Recent content in Home on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jan 2025 20:02:23 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 18:18:13 -0300</lastBuildDate>
     <atom:link href="https://hellendev.com.br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Protocols (TCP, UDP, FTP, SFTP, TFTP)</title>
+      <link>https://hellendev.com.br/docs/transmission-protocols/</link>
+      <pubDate>Tue, 14 Jan 2025 18:18:13 -0300</pubDate>
+      <guid>https://hellendev.com.br/docs/transmission-protocols/</guid>
+      <description>&lt;h2 id=&#34;file-and-transmission-protocols&#34;&gt;File and Transmission Protocols&lt;/h2&gt;
+&lt;h3 id=&#34;tcp-transmission-control-protocol&#34;&gt;TCP (Transmission Control Protocol)&lt;/h3&gt;
+&lt;p&gt;TCP a core protocol of TCP/IP suite, used for reliable communication between devices. It&amp;rsquo;s a connection oriented protocol. So, before data transmission begins, a connection is established through a three-way handshake, the image below shows it.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;three-wat handshake&#34; loading=&#34;lazy&#34; src=&#34;https://hellendev.com.br/images/three-way-handshake.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;TCP ensures data integrity by retransmitting lost packets, ordering packets, and confirming successful delivery.&lt;/p&gt;
+&lt;p&gt;Ideal for applications where accuracy and reliability are critical, such as web browsing (HTTP/HTTPS), email (SMTP/IMAP/POP3) and file transfer (FTP/SFTP). Those which I will cover in another post :)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Git-repair for broken Git Repositories</title>
       <link>https://hellendev.com.br/docs/broken-git-repository/</link>
