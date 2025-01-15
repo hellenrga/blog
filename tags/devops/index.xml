@@ -6,8 +6,24 @@
     <description>Recent content in DevOps on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jan 2025 18:18:13 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jan 2025 17:26:25 -0300</lastBuildDate>
     <atom:link href="https://hellendev.com.br/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Protocols (HTTP, HTTPS, SSL and TLS)</title>
+      <link>https://hellendev.com.br/docs/web-protocols/</link>
+      <pubDate>Wed, 15 Jan 2025 17:26:25 -0300</pubDate>
+      <guid>https://hellendev.com.br/docs/web-protocols/</guid>
+      <description>&lt;h1 id=&#34;understanding-http-https-ssl-and-tls&#34;&gt;Understanding HTTP, HTTPS, SSL, and TLS&lt;/h1&gt;
+&lt;h2 id=&#34;http-hypertext-transfer-protocol&#34;&gt;HTTP (Hypertext Transfer Protocol)&lt;/h2&gt;
+&lt;p&gt;HTTP is the most widely used protocol on the web. It is the foundation for accessing and displaying web pages.&lt;/p&gt;
+&lt;h3 id=&#34;key-features&#34;&gt;Key Features:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Purpose:&lt;/strong&gt; Used for viewing web pages on the internet.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Transmission:&lt;/strong&gt; All information is sent in &lt;strong&gt;clear text&lt;/strong&gt;. This means the data is transferred over the public internet without encryption.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vulnerability:&lt;/strong&gt; Since the data is not encrypted, it is vulnerable to interception by malicious actors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;HTTP is suitable for regular websites where no sensitive information, such as passwords or credit card details, is involved.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Protocols (TCP, UDP, FTP, SFTP, TFTP)</title>
       <link>https://hellendev.com.br/docs/transmission-protocols/</link>

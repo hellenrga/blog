@@ -2,25 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hellendev.com.br/tags/devops/</loc>
+    <lastmod>2025-01-15T17:26:25-03:00</lastmod>
+  </url><url>
     <loc>https://hellendev.com.br/docs/</loc>
     <lastmod>2025-01-15T17:26:25-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/</loc>
     <lastmod>2025-01-15T17:26:25-03:00</lastmod>
   </url><url>
-    <loc>https://hellendev.com.br/tags/devops/</loc>
-    <lastmod>2025-01-14T18:18:13-03:00</lastmod>
-  </url><url>
     <loc>https://hellendev.com.br/tags/network/</loc>
-    <lastmod>2025-01-14T18:18:13-03:00</lastmod>
-  </url><url>
-    <loc>https://hellendev.com.br/docs/transmission-protocols/</loc>
-    <lastmod>2025-01-14T18:18:13-03:00</lastmod>
+    <lastmod>2025-01-15T17:26:25-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/tags/roadmap/</loc>
-    <lastmod>2025-01-14T18:18:13-03:00</lastmod>
+    <lastmod>2025-01-15T17:26:25-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/tags/</loc>
+    <lastmod>2025-01-15T17:26:25-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/docs/web-protocols/</loc>
+    <lastmod>2025-01-15T17:26:25-03:00</lastmod>
+  </url><url>
+    <loc>https://hellendev.com.br/docs/transmission-protocols/</loc>
     <lastmod>2025-01-14T18:18:13-03:00</lastmod>
   </url><url>
     <loc>https://hellendev.com.br/docs/broken-git-repository/</loc>
