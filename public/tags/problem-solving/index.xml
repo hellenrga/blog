@@ -13,8 +13,7 @@
       <link>http://localhost:1313/docs/increase-disk-size/</link>
       <pubDate>Thu, 16 Jan 2025 11:24:08 -0300</pubDate>
       <guid>http://localhost:1313/docs/increase-disk-size/</guid>
-      <description>&lt;h1 id=&#34;increasing-disk-size-in-virtualbox-using-gparted&#34;&gt;Increasing Disk Size in VirtualBox Using GParted&lt;/h1&gt;
-&lt;p&gt;In this guide, I’ll walk you through the process of increasing the disk size of a VirtualBox virtual machine (VM) and allocating the additional space using GParted.&lt;/p&gt;
+      <description>&lt;p&gt;In this guide, I’ll walk you through the process of increasing the disk size of a VirtualBox virtual machine (VM) and allocating the additional space using GParted.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;step-by-step-guide&#34;&gt;Step-by-Step Guide&lt;/h2&gt;
 &lt;h3 id=&#34;1-access-the-virtual-media-manager&#34;&gt;1. Access the Virtual Media Manager&lt;/h3&gt;
