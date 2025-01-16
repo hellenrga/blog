@@ -6,8 +6,15 @@
     <description>Recent content in Docs on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2025 17:26:25 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2025 11:24:08 -0300</lastBuildDate>
     <atom:link href="https://hellendev.com.br/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Increasing disk size at VM Virtual Box</title>
+      <link>https://hellendev.com.br/docs/increase-disk-size/</link>
+      <pubDate>Thu, 16 Jan 2025 11:24:08 -0300</pubDate>
+      <guid>https://hellendev.com.br/docs/increase-disk-size/</guid>
+      <description>&lt;h2 id=&#34;i-had-to-increase-my-vmbox-disk-size-heres-how-i-did-it&#34;&gt;I had to increase my VMbox disk size. Here&amp;rsquo;s How I did It&lt;/h2&gt;</description>
+    </item>
     <item>
       <title>Protocols (HTTP, HTTPS, SSL and TLS)</title>
       <link>https://hellendev.com.br/docs/web-protocols/</link>

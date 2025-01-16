@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2025 17:26:25 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2025 11:24:08 -0300</lastBuildDate>
     <atom:link href="https://hellendev.com.br/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homelab</title>
+      <link>https://hellendev.com.br/tags/homelab/</link>
+      <pubDate>Thu, 16 Jan 2025 11:24:08 -0300</pubDate>
+      <guid>https://hellendev.com.br/tags/homelab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem-Solving</title>
+      <link>https://hellendev.com.br/tags/problem-solving/</link>
+      <pubDate>Thu, 16 Jan 2025 11:24:08 -0300</pubDate>
+      <guid>https://hellendev.com.br/tags/problem-solving/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VM</title>
+      <link>https://hellendev.com.br/tags/vm/</link>
+      <pubDate>Thu, 16 Jan 2025 11:24:08 -0300</pubDate>
+      <guid>https://hellendev.com.br/tags/vm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>DevOps</title>
       <link>https://hellendev.com.br/tags/devops/</link>
@@ -34,13 +55,6 @@
       <link>https://hellendev.com.br/tags/github/</link>
       <pubDate>Mon, 06 Jan 2025 20:02:23 -0300</pubDate>
       <guid>https://hellendev.com.br/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Problem-Solving</title>
-      <link>https://hellendev.com.br/tags/problem-solving/</link>
-      <pubDate>Mon, 06 Jan 2025 20:02:23 -0300</pubDate>
-      <guid>https://hellendev.com.br/tags/problem-solving/</guid>
       <description></description>
     </item>
     <item>
