@@ -11,7 +11,7 @@ Yesterday, I was mildly working on one of my GitHub repositories, making solid p
 
 At first, I thought, *"Oh no, what did I mess up this time?"* Cue the classic facepalm of frustration.  
 
-After all the crying and groaning (just kidding.... it was only crying 😆) I turned to AI for a solution. 
+After all the crying I turned to AI for a solution. 
 
 However, the suggestions I got from ChatGPT were... not very intuitive. I read through them, skeptical but hopeful, and decided to give them a shot anyway.  
 
