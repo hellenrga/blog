@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Homelab on Hellen Assis</title>
+    <link>http://localhost:1313/tags/homelab/</link>
+    <description>Recent content in Homelab on Hellen Assis</description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jan 2025 11:24:08 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Increasing Disk Size in VirtualBox Using GParted</title>
+      <link>http://localhost:1313/docs/increase-disk-size/</link>
+      <pubDate>Thu, 16 Jan 2025 11:24:08 -0300</pubDate>
+      <guid>http://localhost:1313/docs/increase-disk-size/</guid>
+      <description>&lt;h1 id=&#34;increasing-disk-size-in-virtualbox-using-gparted&#34;&gt;Increasing Disk Size in VirtualBox Using GParted&lt;/h1&gt;
+&lt;p&gt;In this guide, I’ll walk you through the process of increasing the disk size of a VirtualBox virtual machine (VM) and allocating the additional space using GParted.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-by-step-guide&#34;&gt;Step-by-Step Guide&lt;/h2&gt;
+&lt;h3 id=&#34;1-access-the-virtual-media-manager&#34;&gt;1. Access the Virtual Media Manager&lt;/h3&gt;
+&lt;p&gt;Go to the &lt;strong&gt;Virtual Media Manager&lt;/strong&gt; of the VM you want to resize. You can find this under &lt;strong&gt;File &amp;gt; Virtual Media Manager&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;file-tools-vmmanager&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/file-tools-vmmanager.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-select-the-disk-to-resize&#34;&gt;2. Select the Disk to Resize&lt;/h3&gt;
+&lt;p&gt;Find the disk you want to increase in size and double-click it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

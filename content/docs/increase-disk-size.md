@@ -5,8 +5,6 @@ title = 'Increasing Disk Size in VirtualBox Using GParted'
 tags = ['VM', 'Homelab', 'Problem-solving']
 +++
 
-# Increasing Disk Size in VirtualBox Using GParted
-
 In this guide, I’ll walk you through the process of increasing the disk size of a VirtualBox virtual machine (VM) and allocating the additional space using GParted.
 
 ---

@@ -6,8 +6,24 @@
     <description>Recent content in Problem-Solving on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jan 2025 20:02:23 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2025 11:24:08 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/problem-solving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Increasing Disk Size in VirtualBox Using GParted</title>
+      <link>http://localhost:1313/docs/increase-disk-size/</link>
+      <pubDate>Thu, 16 Jan 2025 11:24:08 -0300</pubDate>
+      <guid>http://localhost:1313/docs/increase-disk-size/</guid>
+      <description>&lt;h1 id=&#34;increasing-disk-size-in-virtualbox-using-gparted&#34;&gt;Increasing Disk Size in VirtualBox Using GParted&lt;/h1&gt;
+&lt;p&gt;In this guide, I’ll walk you through the process of increasing the disk size of a VirtualBox virtual machine (VM) and allocating the additional space using GParted.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-by-step-guide&#34;&gt;Step-by-Step Guide&lt;/h2&gt;
+&lt;h3 id=&#34;1-access-the-virtual-media-manager&#34;&gt;1. Access the Virtual Media Manager&lt;/h3&gt;
+&lt;p&gt;Go to the &lt;strong&gt;Virtual Media Manager&lt;/strong&gt; of the VM you want to resize. You can find this under &lt;strong&gt;File &amp;gt; Virtual Media Manager&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;file-tools-vmmanager&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/file-tools-vmmanager.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-select-the-disk-to-resize&#34;&gt;2. Select the Disk to Resize&lt;/h3&gt;
+&lt;p&gt;Find the disk you want to increase in size and double-click it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Git-repair for broken Git Repositories</title>
       <link>http://localhost:1313/docs/broken-git-repository/</link>
@@ -16,7 +32,7 @@
       <description>&lt;h1 id=&#34;my-repository-suddenly-broke-heres-how-i-fixed-it&#34;&gt;My Repository Suddenly Broke! Here&amp;rsquo;s How I Fixed It&lt;/h1&gt;
 &lt;p&gt;Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to &lt;code&gt;git push&lt;/code&gt; my hard-working changes, my repository… broke. Completely.&lt;/p&gt;
 &lt;p&gt;At first, I thought, &lt;em&gt;&amp;ldquo;Oh no, what did I mess up this time?&amp;rdquo;&lt;/em&gt; Cue the classic facepalm of frustration.&lt;/p&gt;
-&lt;p&gt;After all the crying and groaning (just kidding&amp;hellip;. it was only crying 😆) I turned to AI for a solution.&lt;/p&gt;</description>
+&lt;p&gt;After all the crying I turned to AI for a solution.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

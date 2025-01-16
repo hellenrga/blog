@@ -6,10 +6,25 @@
     <description>Recent content in Home on Hellen Assis</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2025 17:26:25 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2025 11:24:08 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Web Protocols (HTTP, HTTPS, SSL and TLS)</title>
+      <title>Increasing Disk Size in VirtualBox Using GParted</title>
+      <link>http://localhost:1313/docs/increase-disk-size/</link>
+      <pubDate>Thu, 16 Jan 2025 11:24:08 -0300</pubDate>
+      <guid>http://localhost:1313/docs/increase-disk-size/</guid>
+      <description>&lt;p&gt;In this guide, I’ll walk you through the process of increasing the disk size of a VirtualBox virtual machine (VM) and allocating the additional space using GParted.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-by-step-guide&#34;&gt;Step-by-Step Guide&lt;/h2&gt;
+&lt;h3 id=&#34;1-access-the-virtual-media-manager&#34;&gt;1. Access the Virtual Media Manager&lt;/h3&gt;
+&lt;p&gt;Go to the &lt;strong&gt;Virtual Media Manager&lt;/strong&gt; of the VM you want to resize. You can find this under &lt;strong&gt;File &amp;gt; Virtual Media Manager&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;file-tools-vmmanager&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/file-tools-vmmanager.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-select-the-disk-to-resize&#34;&gt;2. Select the Disk to Resize&lt;/h3&gt;
+&lt;p&gt;Find the disk you want to increase in size and double-click it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Protocols (HTTP, HTTPS, SSL and TLS)</title>
       <link>http://localhost:1313/docs/web-protocols/</link>
       <pubDate>Wed, 15 Jan 2025 17:26:25 -0300</pubDate>
       <guid>http://localhost:1313/docs/web-protocols/</guid>
@@ -32,9 +47,9 @@
       <description>&lt;h2 id=&#34;file-and-transmission-protocols&#34;&gt;File and Transmission Protocols&lt;/h2&gt;
 &lt;h3 id=&#34;tcp-transmission-control-protocol&#34;&gt;TCP (Transmission Control Protocol)&lt;/h3&gt;
 &lt;p&gt;TCP a core protocol of TCP/IP suite, used for reliable communication between devices. It&amp;rsquo;s a connection oriented protocol. So, before data transmission begins, a connection is established through a three-way handshake, the image below shows it.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;three-wat handshake&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/three-way-handshake.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;three-way handshake&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/three-way-handshake.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;TCP ensures data integrity by retransmitting lost packets, ordering packets, and confirming successful delivery.&lt;/p&gt;
-&lt;p&gt;Ideal for applications where accuracy and reliability are critical, such as web browsing (HTTP/HTTPS), email (SMTP/IMAP/POP3) and file transfer (FTP/SFTP). Those which I will cover in another post :)&lt;/p&gt;</description>
+&lt;p&gt;Ideal for applications where accuracy and reliability are critical, such as web browsing (HTTP/HTTPS), email (SMTP/IMAP/POP3) and file transfer (FTP/SFTP).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Git-repair for broken Git Repositories</title>
@@ -44,7 +59,7 @@
       <description>&lt;h1 id=&#34;my-repository-suddenly-broke-heres-how-i-fixed-it&#34;&gt;My Repository Suddenly Broke! Here&amp;rsquo;s How I Fixed It&lt;/h1&gt;
 &lt;p&gt;Yesterday, I was mildly working on one of my GitHub repositories, making solid progress, when disaster struck. Just as I was about to &lt;code&gt;git push&lt;/code&gt; my hard-working changes, my repository… broke. Completely.&lt;/p&gt;
 &lt;p&gt;At first, I thought, &lt;em&gt;&amp;ldquo;Oh no, what did I mess up this time?&amp;rdquo;&lt;/em&gt; Cue the classic facepalm of frustration.&lt;/p&gt;
-&lt;p&gt;After all the crying and groaning (just kidding&amp;hellip;. it was only crying 😆) I turned to AI for a solution.&lt;/p&gt;</description>
+&lt;p&gt;After all the crying I turned to AI for a solution.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Azure FinOps Hub</title>

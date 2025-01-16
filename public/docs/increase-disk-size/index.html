@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Increasing Disk Size in VirtualBox Using GParted | Hellen Assis</title>
+<meta name="keywords" content="VM, Homelab, Problem-solving">
+<meta name="description" content="In this guide, I’ll walk you through the process of increasing the disk size of a VirtualBox virtual machine (VM) and allocating the additional space using GParted.
+
+Step-by-Step Guide
+1. Access the Virtual Media Manager
+Go to the Virtual Media Manager of the VM you want to resize. You can find this under File &gt; Virtual Media Manager.
+
+
+2. Select the Disk to Resize
+Find the disk you want to increase in size and double-click it.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/docs/increase-disk-size/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/docs/increase-disk-size/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Hellen Assis (Alt + H)">Hellen Assis</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/aboutme/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Index">
+                    <span>Index</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/docs/">Docs</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Increasing Disk Size in VirtualBox Using GParted
+    </h1>
+    <div class="post-meta"><span title='2025-01-16 11:24:08 -0300 -03'>January 16, 2025</span>&nbsp;·&nbsp;2 min
+
+</div>
+  </header> 
+  <div class="post-content"><p>In this guide, I’ll walk you through the process of increasing the disk size of a VirtualBox virtual machine (VM) and allocating the additional space using GParted.</p>
+<hr>
+<h2 id="step-by-step-guide">Step-by-Step Guide<a hidden class="anchor" aria-hidden="true" href="#step-by-step-guide">#</a></h2>
+<h3 id="1-access-the-virtual-media-manager">1. Access the Virtual Media Manager<a hidden class="anchor" aria-hidden="true" href="#1-access-the-virtual-media-manager">#</a></h3>
+<p>Go to the <strong>Virtual Media Manager</strong> of the VM you want to resize. You can find this under <strong>File &gt; Virtual Media Manager</strong>.</p>
+<p><img alt="file-tools-vmmanager" loading="lazy" src="/images/file-tools-vmmanager.png"></p>
+<hr>
+<h3 id="2-select-the-disk-to-resize">2. Select the Disk to Resize<a hidden class="anchor" aria-hidden="true" href="#2-select-the-disk-to-resize">#</a></h3>
+<p>Find the disk you want to increase in size and double-click it.</p>
+<p><img alt="double-click-disk" loading="lazy" src="/images/double-click-disk.png"></p>
+<hr>
+<h3 id="3-increase-disk-size">3. Increase Disk Size<a hidden class="anchor" aria-hidden="true" href="#3-increase-disk-size">#</a></h3>
+<p>At the bottom of the screen, drag the slider to the right to increase the disk size to your desired value.</p>
+<p><img alt="disk-size-increase" loading="lazy" src="/images/disk-size-increase.png"></p>
+<hr>
+<h3 id="4-verify-disk-size-in-the-vm">4. Verify Disk Size in the VM<a hidden class="anchor" aria-hidden="true" href="#4-verify-disk-size-in-the-vm">#</a></h3>
+<p>Start your VM and run the following command in the terminal to check the disk size:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>df -h
+</span></span></code></pre></div><p>You’ll notice that the size remains the same because the additional space hasn’t been allocated yet.</p>
+<p><img alt="terminal-command-disk-size" loading="lazy" src="/images/terminal-command-disk-size.png"></p>
+<hr>
+<h3 id="5-download-gparted-iso">5. Download GParted ISO<a hidden class="anchor" aria-hidden="true" href="#5-download-gparted-iso">#</a></h3>
+<p>We’ll use <strong>GParted</strong> to allocate the new disk space. Download the ISO file <a href="https://gparted.org/download.php">here</a>.</p>
+<p><img alt="gparted-download" loading="lazy" src="/images/gparted-download.png"></p>
+<hr>
+<h3 id="6-attach-the-gparted-iso">6. Attach the GParted ISO<a hidden class="anchor" aria-hidden="true" href="#6-attach-the-gparted-iso">#</a></h3>
+<ol>
+<li>In VirtualBox, go to the <strong>Settings</strong> of the VM you want to resize.</li>
+<li>Navigate to <strong>Storage</strong>.</li>
+<li>Click on <strong>Add Optical Drive</strong>.</li>
+</ol>
+<p><img alt="vm-settings-storage" loading="lazy" src="/images/vm-settings-storage.png"></p>
+<hr>
+<h3 id="7-select-the-gparted-iso">7. Select the GParted ISO<a hidden class="anchor" aria-hidden="true" href="#7-select-the-gparted-iso">#</a></h3>
+<ol>
+<li>Click <strong>Add</strong> and locate the GParted <code>.iso</code> file you just downloaded.</li>
+<li>Select the ISO, then click <strong>Choose</strong> at the bottom of the screen.</li>
+</ol>
+<p><img alt="selecting-gpart-iso" loading="lazy" src="/images/selecting-gpart-iso.png">
+<img alt="click-choose-gparted" loading="lazy" src="/images/click-choose-gparted.png"></p>
+<hr>
+<h3 id="8-boot-the-vm-with-gparted">8. Boot the VM with GParted<a hidden class="anchor" aria-hidden="true" href="#8-boot-the-vm-with-gparted">#</a></h3>
+<p>Start the VM. You should see the following screen:</p>
+<p><img alt="gparted-initialized" loading="lazy" src="/images/gparted-initialized.png"></p>
+<p>Press <code>Enter</code>.</p>
+<hr>
+<h3 id="9-launch-gparted">9. Launch GParted<a hidden class="anchor" aria-hidden="true" href="#9-launch-gparted">#</a></h3>
+<p>When prompted, press <code>Enter</code> again to proceed with the default options.</p>
+<p><img alt="console-data-interface" loading="lazy" src="/images/console-data-interface.png"></p>
+<p>After selecting your language, choose option <code>0</code> to start GParted with its graphical interface.</p>
+<hr>
+<h3 id="10-gparted-interface">10. GParted Interface<a hidden class="anchor" aria-hidden="true" href="#10-gparted-interface">#</a></h3>
+<p>Once GParted loads, you’ll see its graphical interface:</p>
+<p><img alt="gparted-interface" loading="lazy" src="/images/gparted-interface.png"></p>
+<hr>
+<h3 id="11-resize-the-partition">11. Resize the Partition<a hidden class="anchor" aria-hidden="true" href="#11-resize-the-partition">#</a></h3>
+<ol>
+<li>Double-click the partition you want to resize.</li>
+<li>Drag the slider to allocate the remaining unallocated space.</li>
+<li>Click <strong>Resize/Move</strong>.</li>
+</ol>
+<p><img alt="resize-vm" loading="lazy" src="/images/resize-vm.png"></p>
+<hr>
+<h3 id="12-apply-the-changes">12. Apply the Changes<a hidden class="anchor" aria-hidden="true" href="#12-apply-the-changes">#</a></h3>
+<p>Click <strong>Apply All Operations</strong> to finalize the resizing.</p>
+<p><img alt="apply-operation" loading="lazy" src="/images/apply-operation.png"></p>
+<hr>
+<h3 id="13-detach-the-gparted-iso">13. Detach the GParted ISO<a hidden class="anchor" aria-hidden="true" href="#13-detach-the-gparted-iso">#</a></h3>
+<ol>
+<li>Shut down the VM.</li>
+<li>Go to <strong>Settings &gt; Storage</strong>.</li>
+<li>Remove the GParted ISO from the <strong>Optical Drive</strong>.</li>
+</ol>
+<p><img alt="remove-attachment-gpart" loading="lazy" src="/images/remove-attachment-gpart.png"></p>
+<hr>
+<h3 id="14-verify-the-new-disk-size">14. Verify the New Disk Size<a hidden class="anchor" aria-hidden="true" href="#14-verify-the-new-disk-size">#</a></h3>
+<p>Start your VM again. Run the following command to check the new disk size:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>df -h
+</span></span></code></pre></div><p>You should now see the updated disk size.</p>
+<p><img alt="new-disk-size" loading="lazy" src="/images/new-disk-size.png"></p>
+<hr>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Congratulations! 🎉 You have successfully increased the disk size of your VirtualBox VM and allocated the additional space using GParted.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/vm/">VM</a></li>
+      <li><a href="http://localhost:1313/tags/homelab/">Homelab</a></li>
+      <li><a href="http://localhost:1313/tags/problem-solving/">Problem-Solving</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/docs/web-protocols/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Protocols (HTTP, HTTPS, SSL and TLS)</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Hellen Assis</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
