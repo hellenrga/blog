@@ -53,4 +53,30 @@ tags = ['VM', 'Homelab', 'Problem-solving']
 
 ![select-0-gparted](/images/console-data-interface.png)
 
+12 - Now, that's the gparted interface you should be looking at.
+
+![gparted-interface](/images/gparted-interface.png)
+
+13 - Click twice in the VM you want to resize
+
+![vm-to-be-resized](/images/gparted-interface.png)
+
+14 - Drag the arrow to the right side so you can allocate the remaining value. Then click on 'Resize/move'
+
+![resize-vm](/images/resize-vm.png)
+
+15 - After that, click on apply operation
+
+![apply-operation](/images/apply-operation.png)
+
+16 - It's done. Now shut down the vm.
+
+17 - Now, again go to Settings > Storage and delete the .iso we preveously attached.
+
+![remove-attachment-gpart](/images/remove-attachment-gpart.png)
+
+18 - Congrats. You succesfully resized your VM disk size. Now turn on your VM again and give a ``df - h `` command, you'll see the new size of the disk.
+
+![new-disk-size](/images/new-disk-size.png)
+
 
