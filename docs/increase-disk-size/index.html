@@ -5,9 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Increasing disk size at VM Virtual Box | Hellen Assis</title>
+<title>Increasing disk size at Virtual Box using GParted | Hellen Assis</title>
 <meta name="keywords" content="VM, Homelab, Problem-solving">
-<meta name="description" content="I had to increase my VMbox disk size. Here&rsquo;s How I did It">
+<meta name="description" content="I had to increase my VMbox disk size. Here&rsquo;s How I did It
+Step-by-step guide
+1 - Go to the Virtual Media Manager of the VM you want to increase the disk size
+
+2 - Find the disk you want to grow and double-click it
+
+3 - At the end of the screen, drag the square to the right to increase its size.
+
+4 - Now, we will need to allocate this new value. If you turn on your VM and give a df - h  command, you&rsquo;ll se the size remain the same">
 <meta name="author" content="">
 <link rel="canonical" href="https://hellendev.com.br/docs/increase-disk-size/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
@@ -57,8 +65,11 @@
     </style>
 </noscript><meta property="og:url" content="https://hellendev.com.br/docs/increase-disk-size/">
   <meta property="og:site_name" content="Hellen Assis">
-  <meta property="og:title" content="Increasing disk size at VM Virtual Box">
-  <meta property="og:description" content="I had to increase my VMbox disk size. Here’s How I did It">
+  <meta property="og:title" content="Increasing disk size at Virtual Box using GParted">
+  <meta property="og:description" content="I had to increase my VMbox disk size. Here’s How I did It Step-by-step guide 1 - Go to the Virtual Media Manager of the VM you want to increase the disk size
+2 - Find the disk you want to grow and double-click it
+3 - At the end of the screen, drag the square to the right to increase its size.
+4 - Now, we will need to allocate this new value. If you turn on your VM and give a df - h command, you’ll se the size remain the same">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -68,8 +79,16 @@
     <meta property="article:tag" content="Homelab">
     <meta property="article:tag" content="Problem-Solving">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Increasing disk size at VM Virtual Box">
-<meta name="twitter:description" content="I had to increase my VMbox disk size. Here&rsquo;s How I did It">
+<meta name="twitter:title" content="Increasing disk size at Virtual Box using GParted">
+<meta name="twitter:description" content="I had to increase my VMbox disk size. Here&rsquo;s How I did It
+Step-by-step guide
+1 - Go to the Virtual Media Manager of the VM you want to increase the disk size
+
+2 - Find the disk you want to grow and double-click it
+
+3 - At the end of the screen, drag the square to the right to increase its size.
+
+4 - Now, we will need to allocate this new value. If you turn on your VM and give a df - h  command, you&rsquo;ll se the size remain the same">
 
 
 <script type="application/ld+json">
@@ -86,7 +105,7 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Increasing disk size at VM Virtual Box",
+      "name": "Increasing disk size at Virtual Box using GParted",
       "item": "https://hellendev.com.br/docs/increase-disk-size/"
     }
   ]
@@ -96,14 +115,14 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Increasing disk size at VM Virtual Box",
-  "name": "Increasing disk size at VM Virtual Box",
-  "description": "I had to increase my VMbox disk size. Here\u0026rsquo;s How I did It",
+  "headline": "Increasing disk size at Virtual Box using GParted",
+  "name": "Increasing disk size at Virtual Box using GParted",
+  "description": "I had to increase my VMbox disk size. Here\u0026rsquo;s How I did It Step-by-step guide 1 - Go to the Virtual Media Manager of the VM you want to increase the disk size\n2 - Find the disk you want to grow and double-click it\n3 - At the end of the screen, drag the square to the right to increase its size.\n4 - Now, we will need to allocate this new value. If you turn on your VM and give a df - h command, you\u0026rsquo;ll se the size remain the same\n",
   "keywords": [
     "VM", "Homelab", "Problem-solving"
   ],
-  "articleBody": "I had to increase my VMbox disk size. Here’s How I did It ",
-  "wordCount" : "13",
+  "articleBody": "I had to increase my VMbox disk size. Here’s How I did It Step-by-step guide 1 - Go to the Virtual Media Manager of the VM you want to increase the disk size\n2 - Find the disk you want to grow and double-click it\n3 - At the end of the screen, drag the square to the right to increase its size.\n4 - Now, we will need to allocate this new value. If you turn on your VM and give a df - h command, you’ll se the size remain the same\n5 - We’ll use GParted for making this disk allocation. Download the iso here\n6 - After the download is finished, open VM VirtualBox, go to the settings of the VM you’re growing, then go to storage, then go to Adds Optical Drive.\n7 - Go to Add, then select the .iso you just installed.\n8 - Select the .iso then click choose at the end of the screen\n9 - Now, initialize the VM. You now should see this screen\n10 - Give an Enter, know you may be seeing this. Also give an enter.\n11 - After selecting the langue, select 0 to start GParted with its graphic interface.\n",
+  "wordCount" : "205",
   "inLanguage": "en",
   "datePublished": "2025-01-16T11:24:08-03:00",
   "dateModified": "2025-01-16T11:24:08-03:00",
@@ -187,13 +206,36 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://hellendev.com.br/">Home</a>&nbsp;»&nbsp;<a href="https://hellendev.com.br/docs/">Docs</a></div>
     <h1 class="post-title entry-hint-parent">
-      Increasing disk size at VM Virtual Box
+      Increasing disk size at Virtual Box using GParted
     </h1>
     <div class="post-meta"><span title='2025-01-16 11:24:08 -0300 -0300'>January 16, 2025</span>&nbsp;·&nbsp;1 min
 
 </div>
   </header> 
   <div class="post-content"><h2 id="i-had-to-increase-my-vmbox-disk-size-heres-how-i-did-it">I had to increase my VMbox disk size. Here&rsquo;s How I did It<a hidden class="anchor" aria-hidden="true" href="#i-had-to-increase-my-vmbox-disk-size-heres-how-i-did-it">#</a></h2>
+<h2 id="step-by-step-guide">Step-by-step guide<a hidden class="anchor" aria-hidden="true" href="#step-by-step-guide">#</a></h2>
+<p>1 - Go to the Virtual Media Manager of the VM you want to increase the disk size</p>
+<p><img alt="file-tools-vmmanager" loading="lazy" src="/images/file-tools-vmmanager.png"></p>
+<p>2 - Find the disk you want to grow and double-click it</p>
+<p><img alt="double-click-disk" loading="lazy" src="/images/double-click-disk.png"></p>
+<p>3 - At the end of the screen, drag the square to the right to increase its size.</p>
+<p><img alt="disk-size-increase" loading="lazy" src="/images/disk-size-increase.png"></p>
+<p>4 - Now, we will need to allocate this new value. If you turn on your VM and give a <code>df - h </code> command, you&rsquo;ll se the size remain the same</p>
+<p><img alt="terminal-command-disk-size" loading="lazy" src="/images/terminal-command-disk-size.png"></p>
+<p>5 - We&rsquo;ll use GParted for making this disk allocation. Download the iso <a href="https://gparted.org/download.php">here</a></p>
+<p><img alt="gparted-download" loading="lazy" src="/images/gparted-download.png"></p>
+<p>6 - After the download is finished, open VM VirtualBox, go to the settings of the VM you&rsquo;re growing, then go to storage, then go to Adds Optical Drive.</p>
+<p><img alt="vm-settings-storage" loading="lazy" src="/images/vm-settings-storage.png"></p>
+<p>7 - Go to Add, then select the .iso you just installed.</p>
+<p><img alt="selecting-gpart-iso" loading="lazy" src="/images/selecting-gpart-iso.png"></p>
+<p>8 - Select the .iso then click choose at the end of the screen</p>
+<p><img alt="click-choose-gparted" loading="lazy" src="/images/click-choose-gparted.png"></p>
+<p>9 - Now, initialize the VM. You now should see this screen</p>
+<p><img alt="gparted-initialized" loading="lazy" src="/images/gparted-initialized.png"></p>
+<p>10 - Give an Enter, know you may be seeing this. Also give an enter.</p>
+<p><img alt="console-data-interface" loading="lazy" src="/images/console-data-interface.png"></p>
+<p>11 - After selecting the langue, select 0 to start GParted with its graphic interface.</p>
+<p><img alt="select-0-gparted" loading="lazy" src="/images/console-data-interface.png"></p>
 
 
   </div>
