@@ -121,8 +121,8 @@ Step-by-step guide
   "keywords": [
     "VM", "Homelab", "Problem-solving"
   ],
-  "articleBody": "I had to increase my VMbox disk size. Here’s How I did It Step-by-step guide 1 - Go to the Virtual Media Manager of the VM you want to increase the disk size\n2 - Find the disk you want to grow and double-click it\n3 - At the end of the screen, drag the square to the right to increase its size.\n4 - Now, we will need to allocate this new value. If you turn on your VM and give a df - h command, you’ll se the size remain the same\n5 - We’ll use GParted for making this disk allocation. Download the iso here\n6 - After the download is finished, open VM VirtualBox, go to the settings of the VM you’re growing, then go to storage, then go to Adds Optical Drive.\n7 - Go to Add, then select the .iso you just installed.\n8 - Select the .iso then click choose at the end of the screen\n9 - Now, initialize the VM. You now should see this screen\n10 - Give an Enter, know you may be seeing this. Also give an enter.\n11 - After selecting the langue, select 0 to start GParted with its graphic interface.\n",
-  "wordCount" : "205",
+  "articleBody": "I had to increase my VMbox disk size. Here’s How I did It Step-by-step guide 1 - Go to the Virtual Media Manager of the VM you want to increase the disk size\n2 - Find the disk you want to grow and double-click it\n3 - At the end of the screen, drag the square to the right to increase its size.\n4 - Now, we will need to allocate this new value. If you turn on your VM and give a df - h command, you’ll se the size remain the same\n5 - We’ll use GParted for making this disk allocation. Download the iso here\n6 - After the download is finished, open VM VirtualBox, go to the settings of the VM you’re growing, then go to storage, then go to Adds Optical Drive.\n7 - Go to Add, then select the .iso you just installed.\n8 - Select the .iso then click choose at the end of the screen\n9 - Now, initialize the VM. You now should see this screen\n10 - Give an Enter, know you may be seeing this. Also give an enter.\n11 - After selecting the langue, select 0 to start GParted with its graphic interface.\n12 - Now, that’s the gparted interface you should be looking at.\n13 - Click twice in the VM you want to resize\n14 - Drag the arrow to the right side so you can allocate the remaining value. Then click on ‘Resize/move’\n15 - After that, click on apply operation\n16 - It’s done. Now shut down the vm.\n17 - Now, again go to Settings \u003e Storage and delete the .iso we preveously attached.\n18 - Congrats. You succesfully resized your VM disk size. Now turn on your VM again and give a df - h command, you’ll see the new size of the disk.\n",
+  "wordCount" : "312",
   "inLanguage": "en",
   "datePublished": "2025-01-16T11:24:08-03:00",
   "dateModified": "2025-01-16T11:24:08-03:00",
@@ -208,7 +208,7 @@ Step-by-step guide
     <h1 class="post-title entry-hint-parent">
       Increasing disk size at Virtual Box using GParted
     </h1>
-    <div class="post-meta"><span title='2025-01-16 11:24:08 -0300 -0300'>January 16, 2025</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2025-01-16 11:24:08 -0300 -0300'>January 16, 2025</span>&nbsp;·&nbsp;2 min
 
 </div>
   </header> 
@@ -236,6 +236,19 @@ Step-by-step guide
 <p><img alt="console-data-interface" loading="lazy" src="/images/console-data-interface.png"></p>
 <p>11 - After selecting the langue, select 0 to start GParted with its graphic interface.</p>
 <p><img alt="select-0-gparted" loading="lazy" src="/images/console-data-interface.png"></p>
+<p>12 - Now, that&rsquo;s the gparted interface you should be looking at.</p>
+<p><img alt="gparted-interface" loading="lazy" src="/images/gparted-interface.png"></p>
+<p>13 - Click twice in the VM you want to resize</p>
+<p><img alt="vm-to-be-resized" loading="lazy" src="/images/gparted-interface.png"></p>
+<p>14 - Drag the arrow to the right side so you can allocate the remaining value. Then click on &lsquo;Resize/move&rsquo;</p>
+<p><img alt="resize-vm" loading="lazy" src="/images/resize-vm.png"></p>
+<p>15 - After that, click on apply operation</p>
+<p><img alt="apply-operation" loading="lazy" src="/images/apply-operation.png"></p>
+<p>16 - It&rsquo;s done. Now shut down the vm.</p>
+<p>17 - Now, again go to Settings &gt; Storage and delete the .iso we preveously attached.</p>
+<p><img alt="remove-attachment-gpart" loading="lazy" src="/images/remove-attachment-gpart.png"></p>
+<p>18 - Congrats. You succesfully resized your VM disk size. Now turn on your VM again and give a <code>df - h </code> command, you&rsquo;ll see the new size of the disk.</p>
+<p><img alt="new-disk-size" loading="lazy" src="/images/new-disk-size.png"></p>
 
 
   </div>
