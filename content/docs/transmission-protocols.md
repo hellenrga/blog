@@ -11,7 +11,7 @@ tags = ['DevOps', 'Roadmap', 'Network']
 
 TCP a core protocol of TCP/IP suite, used for reliable communication between devices. It's a connection oriented protocol. So, before data transmission begins, a connection is established through a three-way handshake, the image below shows it.
 
-![three-wat handshake](/images/three-way-handshake.png)  
+![three-way handshake](/images/three-way-handshake.png)  
 
 TCP ensures data integrity by retransmitting lost packets, ordering packets, and confirming successful delivery.
 
