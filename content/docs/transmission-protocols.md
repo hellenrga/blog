@@ -15,7 +15,7 @@ TCP a core protocol of TCP/IP suite, used for reliable communication between dev
 
 TCP ensures data integrity by retransmitting lost packets, ordering packets, and confirming successful delivery.
 
-Ideal for applications where accuracy and reliability are critical, such as web browsing (HTTP/HTTPS), email (SMTP/IMAP/POP3) and file transfer (FTP/SFTP). Those which I will cover in another post :)
+Ideal for applications where accuracy and reliability are critical, such as web browsing (HTTP/HTTPS), email (SMTP/IMAP/POP3) and file transfer (FTP/SFTP).
 
 ### UDP (User Datagram Protocol)
 
