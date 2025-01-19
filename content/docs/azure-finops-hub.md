@@ -7,7 +7,7 @@ tags = ['Azure', 'FinOps', 'DevOps']
 
 # What is Azure FinOps Hub?
 
-The Azure FinOps Hub is a community-driven template designed to consolidate Azure financial management tools as Cost Management + Billing, Azure Advisor, Azure Policy etc. into a **single interface**. Simple as that. 
+The Azure FinOps Hub is a community-driven template designed to consolidate Azure financial management tools as 'Cost Management + Billing, Azure Advisor, Azure Policy' etc. into a **single interface**. Simple as that. 
 
 (Why is it so hard to find straightforward concepts on internet these days?)
 
